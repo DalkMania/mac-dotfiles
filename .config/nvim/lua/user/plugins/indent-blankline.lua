@@ -1,5 +1,6 @@
-require('indent_blankline').setup({
-    filetype_exclude = {
+require('ibl').setup({
+  exclude = {
+    filetypes = {
       'help',
       'terminal',
       'dashboard',
@@ -8,8 +9,9 @@ require('indent_blankline').setup({
       'TelescopePrompt',
       'TelescopeResults',
     },
-    buftype_exclude = {
+    buftypes = {
       'terminal',
       'NvimTree',
-    },
-  })
+    }
+  }
+})

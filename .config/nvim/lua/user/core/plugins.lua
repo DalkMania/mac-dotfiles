@@ -46,6 +46,7 @@ local ensure_packer = function()
   use ( 'DanilaMihailov/beacon.nvim' )              -- cursor jump
   use({
   'nvim-lualine/lualine.nvim',
+  main = "ibl",
   requires = 'kyazdani42/nvim-web-devicons',
   config = function()
     require('user/plugins/lualine')
