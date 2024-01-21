@@ -32,6 +32,6 @@ dotfiles push
 To set up a new machine, clone the repo to a temporary directory. This is because you might have some default config files in your $HOME which will cause a normal clone to fail.
 ```
 git clone --separate-git-dir=$HOME/.dotfiles git@github.com:DalkMania/mac-dotfiles.git tmpdotfiles
-rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+rsync --recursive --verbose --exclude 'README.md' --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 ```
