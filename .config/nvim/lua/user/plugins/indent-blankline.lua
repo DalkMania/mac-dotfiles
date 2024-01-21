@@ -1,17 +1,24 @@
-require('ibl').setup({
-  exclude = {
-    filetypes = {
-      'help',
-      'terminal',
-      'dashboard',
-      'packer',
-      'lspinfo',
-      'TelescopePrompt',
-      'TelescopeResults',
+return {
+  'lukas-reineke/indent-blankline.nvim',
+  main = 'ibl',
+  opts = {
+    scope = {
+      show_start = false,
     },
-    buftypes = {
-      'terminal',
-      'NvimTree',
+    exclude = {
+      filetypes = {
+        'help',
+        'terminal',
+        'dashboard',
+        'packer',
+        'lspinfo',
+        'TelescopePrompt',
+        'TelescopeResults',
+      },
+      buftypes = {
+        'terminal',
+        'NvimTree',
+      }
     }
   }
-})
+}

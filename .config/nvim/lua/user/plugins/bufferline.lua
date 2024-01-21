@@ -1,4 +1,8 @@
-require('bufferline').setup({
+return {
+  "akinsho/bufferline.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  version = "*",
+  opts = {
     options = {
       indicator = {
         icon = ' ',
@@ -76,5 +80,6 @@ require('bufferline').setup({
         bg = { attribute = 'bg', highlight = 'StatusLine' },
       },
     },
-  })
+  },
+}
   
