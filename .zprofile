@@ -7,7 +7,7 @@ if [ -d /usr/local/bin/ ]; then
 fi
 
 # Paths
-typeset -u PATH
+typeset -U PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 if [[ $(uname -m) == 'arm64' ]]; then
