@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
 tap "homebrew/services"
 brew "bat"
