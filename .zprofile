@@ -9,4 +9,11 @@ fi
 # Paths
 typeset -u PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
+
+if [[ $(uname -m) == 'arm64' ]]; then
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+fi
+
+if [[ $(uname -m) == 'x86_64' ]]; then
+  export PATH="/usr/local/bin:$PATH"
+fi
