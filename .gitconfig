@@ -51,7 +51,7 @@
 	whitespace = red reverse
 
 [core]
-	excludesfile = /Users/niklasdahlqvist/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = vim
 
 [fetch]
