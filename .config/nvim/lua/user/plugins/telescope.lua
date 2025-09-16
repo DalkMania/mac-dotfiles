@@ -1,5 +1,3 @@
-local actions = require('telescope.actions')
-
 vim.cmd([[
   highlight link TelescopePromptTitle PMenuSel
   highlight link TelescopePreviewTitle PMenuSel
